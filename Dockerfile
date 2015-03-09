@@ -20,9 +20,9 @@
 #        not get expanded (probably because it is in a string literal).
 
 # Use jmeter-base as the foundation
-FROM ssankara/jmeter-base
+FROM santosharakere/jmeter-base
 
-MAINTAINER Sri Sankaran sri@redhat.com
+MAINTAINER Santosh Marigowda santosharakere@gmail.com 
 
 # Create mount point for script, data and log files
 VOLUME ["/scripts"]
@@ -32,4 +32,4 @@ VOLUME ["/logs"]
 # Use a predefined configuration.  This sets the contract for connecting to jmeter servers.
 ADD jmeter.properties /var/lib/apache-jmeter-$JMETER_VERSION/bin/
 
-ENTRYPOINT [ "/var/lib/apache-jmeter-2.11/bin/jmeter" ]
+ENTRYPOINT [ "/var/lib/apache-jmeter-2.12/bin/jmeter" ]
