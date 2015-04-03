@@ -32,4 +32,4 @@ VOLUME ["/logs"]
 # Use a predefined configuration.  This sets the contract for connecting to jmeter servers.
 ADD jmeter.properties /var/lib/apache-jmeter-$JMETER_VERSION/bin/
 
-ENTRYPOINT [ "/var/lib/apache-jmeter-2.12/bin/jmeter" ]
+ENTRYPOINT [ "/var/lib/apache-jmeter-2.13/bin/jmeter" ]
