@@ -1,3 +1,3 @@
 How to build?
 ------------
-docker build -t santosharakere/jmeter .
+docker build -t <your docker login>/jmeter .
